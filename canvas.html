@@ -1,0 +1,179 @@
+<canvas id="mitsuha" width="600" height="600"></canvas>
+<script type="text/javascript">
+  function draw(){
+    var canvas = document.getElementById('mitsuha');
+    if(!canvas.getContext) return;
+    var ctx = canvas.getContext("2d");
+    //头部外部轮廓
+    ctx.strokeRect(0, 0, 600, 600);//总画框大小
+    ctx.moveTo(75,32);
+    ctx.bezierCurveTo(75,32,90,17,120,20);
+    ctx.moveTo(120,20);
+    ctx.bezierCurveTo(120,20,200,34,180,130);//顶部头发圆弧处
+    ctx.moveTo(75,32);
+    ctx.bezierCurveTo(75,32,50,25,30,60);
+    ctx.moveTo(30,60);
+    ctx.bezierCurveTo(30,60,16,96,30,120);
+    ctx.moveTo(36,80);
+    ctx.bezierCurveTo(33,72,21,100,30,120);
+    ctx.moveTo(36,78);
+    ctx.bezierCurveTo(33,78,28,102,40,122.5);
+    ctx.moveTo(40,122.5);
+    ctx.bezierCurveTo(40,122.5,36,163,46,188.5);
+    ctx.moveTo(46,188.5);
+    ctx.bezierCurveTo(46,188.5,45,162.5,44.8,159.5);
+    ctx.moveTo(44.8,159.5);
+    ctx.bezierCurveTo(44.8,159.5,45.5,181.8,56,192);
+    ctx.moveTo(56,194);
+    ctx.bezierCurveTo(56,194,54,193.5,56,164);
+    ctx.moveTo(60,60);//下面开始为头部内部轮廓
+    ctx.bezierCurveTo(60,60,47,80,46,113);
+    ctx.moveTo(46,113);
+    ctx.bezierCurveTo(46,113,48,114.8,51.5,155.5);
+    ctx.moveTo(51.5,155.5);
+    ctx.bezierCurveTo(51.5,155.5,51,159,54,160);
+    ctx.moveTo(54,160);
+    ctx.bezierCurveTo(54,160,62,170,75,185);
+    ctx.moveTo(75,184.7);
+    ctx.bezierCurveTo(75,184.7,77,186.7,79.5,184.4);
+    ctx.moveTo(75,185);
+    ctx.bezierCurveTo(75.5,185,95,187,123,164);//右侧下颌骨
+    ctx.moveTo(88,185);
+    ctx.bezierCurveTo(88,185,89,186,92,202);//左侧脖子边
+    ctx.moveTo(145,173);
+    ctx.bezierCurveTo(145,173,145.5,186,146,187);//右侧脖子边
+    ctx.moveTo(60,60);
+    ctx.bezierCurveTo(60,60,50,89,67,109);
+    ctx.moveTo(67,109);
+    ctx.bezierCurveTo(67,109,55,89,68,63);
+    ctx.moveTo(68,63);
+    ctx.bezierCurveTo(68,63,64,98,93.5,109);
+    ctx.moveTo(93.5,109);
+    ctx.bezierCurveTo(93.5,109,84,102,86,59);
+    ctx.moveTo(86,59);
+    ctx.bezierCurveTo(86,59,86,80,114.514,104);
+    ctx.moveTo(114.514,104);
+    ctx.bezierCurveTo(114.514,104,103.5,84.5,106,80);
+    ctx.moveTo(106,80);
+    ctx.bezierCurveTo(106,80,104.5,86.5,124,104);
+    ctx.moveTo(119.4,85);
+    ctx.bezierCurveTo(119.4,85,126.5,110,124,124);
+    ctx.moveTo(124,124);
+    ctx.bezierCurveTo(124,124,131.5,114,137,78);
+	  ctx.moveTo(130,108);
+    ctx.bezierCurveTo(130,108,134,155,130,190);
+	  ctx.moveTo(130,190);
+    ctx.bezierCurveTo(130,190,137.7,158,139,148.8);
+	  ctx.moveTo(138,155);
+    ctx.bezierCurveTo(138,155,140,168,136.7,194);
+	  ctx.moveTo(136.7,194);
+    ctx.bezierCurveTo(136.7,194,156,155,156,96);
+	  ctx.moveTo(155.6,119.5);
+    ctx.bezierCurveTo(155.6,119.5,163,112,167,119.5);//上半耳廓
+	  ctx.moveTo(167,119.5);
+    ctx.bezierCurveTo(167,119.5,163,150,152,147);//下半耳廓
+	  ctx.moveTo(154.4,128);
+    ctx.bezierCurveTo(154.4,128,163,114,162.8,123);
+	  ctx.moveTo(158.4,124);
+    ctx.bezierCurveTo(158.4,124,167,130,152.3,140);
+    ctx.moveTo(154.4,130);
+    ctx.bezierCurveTo(154.4,130,155,130.8,156,131.6);
+    ctx.moveTo(147.8,161);//后部发型
+    ctx.bezierCurveTo(147.8,161,154.3,164,158,157.5);
+    ctx.moveTo(158,157.5);
+    ctx.bezierCurveTo(158,157.5,182,167,182,143.3);
+    ctx.moveTo(182,146.3);
+    ctx.bezierCurveTo(182,146.3,207.3,137.4,195,116.3);
+    ctx.moveTo(196,116.3);
+    ctx.bezierCurveTo(195,116.3,214,108.4,195,91.3);
+    ctx.moveTo(196.4,92.5);
+    ctx.bezierCurveTo(196.4,92.5,208,78,181,75.3);
+    ctx.moveTo(174,60);//发饰(绑结处）
+    ctx.bezierCurveTo(174,60,186,65,180,75);
+    ctx.moveTo(173,59);
+    ctx.bezierCurveTo(173,59,192.5,59.7,180,75);
+    ctx.moveTo(182,73.2);
+    ctx.bezierCurveTo(180,73.2,237.5,62.7,220,120);     //绳子发饰
+    ctx.moveTo(220,120);                                //   +
+    ctx.bezierCurveTo(220,120,210.5,126,196.5,114.8);   //   +
+    ctx.moveTo(187.2,76.2);                             //   +
+    ctx.bezierCurveTo(187.2,76.2,228.5,71.7,215,116);   //   +
+    ctx.moveTo(215,116);                                //   +
+    ctx.bezierCurveTo(215,116,210.5,120,199.5,111.8);   //   +
+    ctx.moveTo(198,126);                                //   +
+    ctx.bezierCurveTo(198,126,208.5,156,225,152);       //   +
+    ctx.moveTo(196,133);                                //   +
+    ctx.bezierCurveTo(196,133,208.5,159,225,158);       //   +
+    ctx.moveTo(225,152);                                //   +
+    ctx.bezierCurveTo(225,152,228.5,156,225,158);       //-------
+    ctx.moveTo(176,59);
+    ctx.bezierCurveTo(176,59,170,30,205,23)
+    ctx.moveTo(205,23);
+    ctx.bezierCurveTo(205,23,194,25,190,40);
+    ctx.moveTo(190,40);
+    ctx.bezierCurveTo(190,40,205.5,22,225,44.8);
+    ctx.moveTo(225,44.8);
+    ctx.bezierCurveTo(225,44.8,213.5,40,200,49);
+    ctx.moveTo(200,49);
+    ctx.bezierCurveTo(200,49,221.5,46,229,68);
+    ctx.moveTo(229,68);
+    ctx.bezierCurveTo(229,68,221.5,58,213,63);
+    ctx.moveTo(209,63);
+    ctx.bezierCurveTo(209,63,221.5,61.7,224,73.7);
+    ctx.moveTo(173,59);
+    ctx.bezierCurveTo(173,59,192.5,59.7,180,75);
+    ctx.moveTo(213.2,68.7);
+    ctx.bezierCurveTo(213.2,68.7,221.5,76,230,76);
+    ctx.moveTo(230,76);
+    ctx.bezierCurveTo(230,76,221.5,86,215.8,81);
+    ctx.moveTo(212,84.6);
+    ctx.bezierCurveTo(212,84.6,208.5,86,206,86);
+    ctx.moveTo(202,86.5);
+    ctx.bezierCurveTo(202,86.5,213.5,87,218,100);
+    ctx.moveTo(218,100);
+    ctx.bezierCurveTo(218,100,213.5,94,199,96);
+    //脸部曲线较多，分段注释-----------------------------------------
+    ctx.moveTo(48,98);                                    //眉毛&眼皮
+    ctx.bezierCurveTo(48,98,52,101,59,97);                //   +
+    ctx.moveTo(47,98.5);                                  //   +
+    ctx.bezierCurveTo(47,98.5,52,103.6,60,98);            //   +
+    ctx.moveTo(88,95);                                    //   +
+    ctx.bezierCurveTo(88,95,95.8,100.6,108,97);           //   +
+    ctx.moveTo(89,97.2);                                  //   +
+    ctx.bezierCurveTo(89,97.2,95.8,100.6,108,97);         //   +
+    ctx.moveTo(50,109.5);                                 //   +
+    ctx.bezierCurveTo(50,109.5,55.2,104.6,61.2,108.5);    //   +
+    ctx.moveTo(97,106.2);                                 //   +
+    ctx.bezierCurveTo(97,106.2,100.8,102.6,109.3,105.2);  //--------
+    ctx.moveTo(50.5,114);                                 //左眼
+    ctx.bezierCurveTo(50.5,114,64.7,104.7,67.2,119);      //  +
+    ctx.moveTo(50.5,115.8);                               //  +
+    ctx.bezierCurveTo(50.5,115.4,59,104.2,67.2,119);      //  +
+    ctx.moveTo(66.2,118);                                 //  +
+    ctx.bezierCurveTo(66.2,118,65.8,123.8,61.2,126.8);    //  +
+    ctx.moveTo(61.2,126.8);                               //  +
+    ctx.bezierCurveTo(61.2,126.8,59,128.2,56.2,126.2);    //  +
+    ctx.moveTo(56.2,126.2);                               //  +
+    ctx.bezierCurveTo(56.2,126.2,50,124,52.7,112.2);      //----
+    ctx.moveTo(96.3,110);                                 //右眼
+    ctx.bezierCurveTo(96.3,110,116.7,101.7,114.8,120.5);  //  +
+    ctx.moveTo(96.9,111.8);                               //  +
+    ctx.bezierCurveTo(96.9,111.8,113,98.2,115.2,120.5);   //  +
+    ctx.moveTo(112.3,113.2);                              //  +
+    ctx.bezierCurveTo(112.3,113.2,115,117.6,110.4,126.3); // +
+    ctx.moveTo(110.4,126.3);                              //  +
+    ctx.bezierCurveTo(110.4,126.3,106,129,101.6,126.3);   //  +
+    ctx.moveTo(101.6,126.3);                              //  +
+    ctx.bezierCurveTo(101.6,126.3,95,119,100,110.3);      //----
+    ctx.moveTo(67.2,130);                                 //口鼻
+    ctx.bezierCurveTo(67.2,130,65.5,133,64,137);//鼻      //  +
+    ctx.moveTo(64,139.6);                                 //  +
+    ctx.bezierCurveTo(64,139.6,65.5,139,67.2,143);        //  +
+    ctx.moveTo(70.8,160);                                 //  +
+    ctx.bezierCurveTo(70.8,160,72,158.4,75,159.7);//嘴    //  +
+    ctx.moveTo(77,160);                                   //  +
+    ctx.bezierCurveTo(77,160,80,161,82.4,162.3);          //----
+    ctx.stroke();
+  }
+draw();
+</script>
